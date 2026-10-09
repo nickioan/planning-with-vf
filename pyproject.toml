@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vfplan"
+version = "1.0.0"
+description = "Diffusion-based planning with learned viability filters (Ioannidis et al., 2025)"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Nicholas Ioannidis" },
+    { name = "Daniele Reda" },
+    { name = "Setareh Cohan" },
+    { name = "Michiel van de Panne" },
+]
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy>=1.21",
+    "scipy",
+    "pybullet>=3.2",
+    "einops",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+video = ["moviepy<2"]
+wandb = ["wandb"]
+
+[project.urls]
+Paper = "https://doi.org/10.1145/3747864"
+
+[tool.setuptools.packages.find]
+include = ["vfplan*"]
+
+[tool.setuptools.package-data]
+"vfplan.envs" = ["assets/*"]
+"vfplan.controller" = ["*.pt"]
+
+[tool.ruff]
+line-length = 110

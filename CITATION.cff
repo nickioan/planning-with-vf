@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Diffusion-based Planning with Learned Viability Filters"
+authors:
+  - family-names: Ioannidis
+    given-names: Nicholas
+  - family-names: Reda
+    given-names: Daniele
+  - family-names: Cohan
+    given-names: Setareh
+  - family-names: van de Panne
+    given-names: Michiel
+preferred-citation:
+  type: article
+  title: "Diffusion-based Planning with Learned Viability Filters"
+  authors:
+    - family-names: Ioannidis
+      given-names: Nicholas
+    - family-names: Reda
+      given-names: Daniele
+    - family-names: Cohan
+      given-names: Setareh
+    - family-names: van de Panne
+      given-names: Michiel
+  journal: "Proceedings of the ACM on Computer Graphics and Interactive Techniques"
+  volume: 8
+  issue: 4
+  start: 62
+  year: 2025
+  month: 8
+  doi: "10.1145/3747864"
